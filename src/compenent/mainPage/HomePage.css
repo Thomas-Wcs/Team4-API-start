@@ -1,0 +1,122 @@
+.question-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.question-container {
+  width: 30%;
+}
+.question-container-div button {
+  width: 30%;
+  border-radius: 2px solid;
+  margin: 3px;
+}
+
+.movies-section {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px;
+  margin-left: 0px;
+  overflow-y: scroll;
+  max-height: calc(400px + 40px);
+}
+
+.movie-card {
+  width: calc(15% - 20px);
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.page-title {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.search-input {
+  width: 50%;
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 3px solid;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .question-section {
+    display: block;
+    width: 100%;
+  }
+  .question-container-tag-div {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .question-container-div {
+    width: 100%;
+  }
+  .tag-container-div {
+    width: 100%;
+  }
+  .movies-section {
+    width: 100%;
+  }
+  .movie-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .question-section {
+    display: block;
+    width: 100%;
+  }
+  .question-container-tag-div {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .question-container-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .tag-container-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .movies-section {
+    width: 100%;
+  }
+  .movie-card {
+    width: calc(50% - 20px);
+  }
+}
